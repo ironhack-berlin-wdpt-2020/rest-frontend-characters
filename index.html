@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Rest Countries API</title>
+</head>
+
+<body>
+  <h1>Countries Info</h1>
+  <!-- use input's id to grab the value from the input field -->
+  <label for="theInput"></label>
+  <input id="theInput" type="text" />
+  <button id="theButton">Get the country</button>
+
+  <form action="#" method="post" id="character-form">
+    <div>
+      <label for="the-name-input"> Name: </label>
+      <input type="text" name="name" class="the-name" id="the-name-input" />
+    </div>
+    <div>
+      <label for="the-occupation-input"> Occupation: </label>
+      <input type="text" name="occupation" class="the-occupation" id="the-occupation-input" />
+    </div>
+    <div>
+      <label for="the-weapon-input"> Weapon: </label>
+      <input type="text" name="weapon" class="the-weapon" id="the-weapon-input" />
+    </div>
+    <button type="submit">Save</button>
+  </form>
+
+  <!-- the data we get from the API will be populated in here: -->
+  <h2 id="countryName"></h2>
+  <p id="countryCapital"></p>
+
+  <!-- loading from unpkg CDN -->
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>
